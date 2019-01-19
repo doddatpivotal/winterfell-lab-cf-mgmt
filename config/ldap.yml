@@ -1,0 +1,14 @@
+enabled: true
+ldapHost: ldap.jumpcloud.com
+ldapPort: 389
+use_tls: false
+bindDN: uid=servicebind,ou=Users,o=5c390cd9c556772e64d4fbb5,dc=jumpcloud,dc=com
+userSearchBase: ou=Users,o=5c390cd9c556772e64d4fbb5,dc=jumpcloud,dc=com
+userNameAttribute: uid
+userMailAttribute: mail
+userObjectClass: inetOrgPerson
+groupSearchBase: ou=Users,o=5c390cd9c556772e64d4fbb5,dc=jumpcloud,dc=com
+groupAttribute: member
+origin: ldap
+insecure_skip_verify: true
+ca_cert: ""
